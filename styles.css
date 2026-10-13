@@ -15,6 +15,51 @@
 
 
 /* Header styles */
+header {
+   position: sticky;
+   z-index: 50;
+   top: 0;
+   border-bottom: 1px soild #c7af9c;
+   background: rgba (255,255,255,.96);
+   display: flex;
+   height: 76px;
+   max-width: 1400px;
+   margin: auto;
+   padding: 0 56px;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.logo {
+   width: clamp(155px, 18vw, 190px);
+   height: auto;
+}
+
+.nav-link {
+   position: relative;
+   color: #5c4a3e;
+   font-size: 12px;
+   font-weight: 600;
+   letter-spacing: .12em;
+   text-transform: uppercase;
+}
+
+.nav-link::after {
+   position: absolute;
+   right: 0;
+   bottom: -9px;
+   left: 0;
+   height: 1px;
+   content:"";
+   background: #a98467;
+   transform: scaleX(0);
+   transition: transform 180ms ease;
+}
+
+.nav-link:hover::after, .nav-link.active::after {
+   transform: scaleX(1);
+}
+
 
 
 
@@ -28,6 +73,11 @@
 
 
 /* Page footer styles */
+footer {
+   background: #231f20;
+   color: white;
+}
+
 
 
 
