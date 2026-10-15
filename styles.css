@@ -13,8 +13,6 @@
   font-family: "DM Sans", sans-serif;
   color: #231f20;
   background: #ffffff;
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
 }
 
 
@@ -148,12 +146,12 @@ footer {
 }
 
 footerGrid { 
-display: grid; 
-   max-width: 1400px; 
-   margin: auto; 
-   padding: 80px 56px; 
-   grid-template-columns: 1.1fr 1fr 1fr; 
-   gap: 48px;
+ display: grid;
+  max-width: 1400px;
+  margin: auto;
+  padding: 80px 56px;
+  grid-template-columns: 1.1fr 1fr 1fr;
+  gap: 48px;
 }
 
 #footerp {
