@@ -136,6 +136,7 @@ header {
 footer {
    background: #231f20;
    color: white;
+   padding: 56px 56px;
 }
 
 
@@ -143,7 +144,7 @@ footer {
    width: clamp(155px, 18vw, 190px);
    height: auto;
    margin-bottom: 24px;
-   margin-left: 56px;
+   
 }
 
 footerGrid { 
@@ -156,7 +157,7 @@ display: grid;
 }
 
 #footerp {
-   padding: 20px 56px; 
+   padding-bottom: 20px; 
    color: #c7af9c;
    margin-bottom: 24px; 
    font-size: 1em;
@@ -172,7 +173,6 @@ display: grid;
 
 .footerGrid .footerInfo  { 
    margin-bottom: 20px; 
-   margin-left: 56px;
 }
 
 .footerGrid dl { 
