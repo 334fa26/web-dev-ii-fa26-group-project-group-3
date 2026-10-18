@@ -42,7 +42,7 @@ button, input, select, textarea {
 }
 
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible { 
-   outline: 2px solid #5c4a3e; 
+   outline: 2px solid #a98467; 
    outline-offset: 3px; 
 }
 
@@ -83,7 +83,7 @@ header {
 }
 
 .headerLogo {
-   width: 220px;
+   width: 170px;
    height: 90px;
    object-fit: cover;
    object-position: bottom;
@@ -99,6 +99,15 @@ header {
 
 .navLink {
    position: relative;
+   color: #5c4a3e;
+   font-size: 12px;
+   font-weight: 600;
+   letter-spacing: .12em;
+   text-transform: uppercase;
+}
+
+.activeNavLink {
+    position: relative;
    color: #5c4a3e;
    font-size: 12px;
    font-weight: 600;
