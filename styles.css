@@ -193,7 +193,13 @@ header {
   line-height: 1.85;
 }
 
-
+/* Image Styles */
+.sectionItem img {
+  width: 128px;
+  height: 112px;
+  flex: none;
+  object-fit: cover;
+}
 
 
 
