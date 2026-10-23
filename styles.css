@@ -1,33 +1,267 @@
 @charset "utf-8";
 
 /*
-   Project Name:
-   Author(s):
-   Date:
+   Project Name: Group 3 Sweet Clover Bakery Site
+   Author(s):Riley Fain, Carter Gebhards, Ava Wohlenhaus
+   Date: 10/16/2026
    Filename: styles.css
 
 */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap");
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  color: #231f20;
+  background: #ffffff;
+}
 
 
 /* HTML and Body styles */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
 
+body {
+   margin: 0; 
+   min-width: 320px; 
+   background: white; 
+   font-family: "DM Sans", sans-serif;
+}
+
+img 
+{ display: block; 
+   max-width: 100%; 
+}
+
+a { 
+   color: inherit; 
+   text-decoration: none;
+}
+
+button, input, select, textarea {
+   font: inherit; 
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible, summary:focus-visible { 
+   outline: 2px solid #a98467; 
+   outline-offset: 3px; 
+}
+
+h1, h2, h3 {
+   margin-top:0;
+   font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+   font-weight: 400;
+}
+
+p{
+   line-height: 1.8
+}
+
+em { 
+   color: #5c4a3e; 
+   font-weight: 400; 
+}
 
 
 
 /* Header styles */
+header {
+   position: sticky;
+   top: 0;
+   z-index: 50;
+   border-bottom: 3px solid #c7af9c;
+   background: rgba(255,255,255,.96);
+}
+
+.headerContent { 
+   display: flex; 
+   height: 76px; 
+   max-width: 1600px;
+   margin: auto; 
+   padding: 0 56px; 
+   align-items: center; 
+   justify-content: space-between; 
+}
+
+.headerLogo {
+   width: 170px;
+   height: 90px;
+   object-fit: cover;
+   object-position: bottom;
+   margin-bottom: 12px;
+}
+
+.desktopNav {
+   display: flex; 
+   gap: 36px; 
+   align-items: center; 
+}
 
 
+.navLink {
+   position: relative;
+   color: #5c4a3e;
+   font-size: 12px;
+   font-weight: 600;
+   letter-spacing: .12em;
+   text-transform: uppercase;
+}
 
+.activeNavLink {
+    position: relative;
+   color: #5c4a3e;
+   font-size: 12px;
+   font-weight: 600;
+   letter-spacing: .12em;
+   text-transform: uppercase;
+}
+
+.navLink::after {
+   position: absolute;
+   right: 0;
+   bottom: -9px;
+   left: 0;
+   height: 1px;
+   content:"";
+   background: #a98467;
+   transform: scaleX(0);
+   transition: transform 180ms ease;
+}
+
+.activeNavLink:hover::after, .activeNavLink::after {
+   transform: scaleX(1);
+}
 
 /* Navigation list styles */
 
+/* Button styles */
+.buttonDark {
+   display: inline-flex;
+   min-height: 48px;
+   padding: 0 22px;
+   align-items: center;
+   justify-content: center;
+   gap: 16px;
+   border: 1px solid #4d613d;
+   font-size: 10px;
+   font-weight: 600;
+   letter-spacing: .14em;
+   text-transform: uppercase;
+   transition: 180ms ease;
+   background: #4d613d;
+   color: white;
+}
+
+.buttonDark:hover {
+   border-color: #85bc64;
+   background: #85bc64;
+   color: #231f20;
+   transform: translateY(-2px);
+}
 
 
 /* Article Styles */
+.pageHead{
+   padding: 140px 40px 110px;
+  text-align: center;
+}
+
+.introLine{
+  margin-bottom: 20px;
+  color: #a98467;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .24em;
+  line-height: 1.5;
+  text-transform: uppercase; 
+}
+
+.pageTitle{
+   color: #5c4a3e;
+   margin: 0;
+  font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+  font-size: 5em;
+  font-weight: 400;
+  line-height: .8;
+}
+
+.pageBlurb{
+   padding-bottom: 20px;
+   margin: 32px auto 0;
+  max-width: 580px;
+  color: #807e7e;
+  font-size: 15px;
+  line-height: 1.85;
+}
+
+/* Image Styles */
+.sectionItem img {
+  width: 128px;
+  height: 112px;
+  flex: none;
+  object-fit: cover;
+}
+
+
+
 
 
 
 /* Page footer styles */
+footer {
+   display: grid;
+   background: #231f20;
+   color: white;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 50px;
+   padding: 80px 6%;
+}
+
+
+#footerLogo {
+   width: 220px;
+   height: 90px;
+   object-fit: cover;
+   object-position: bottom;
+   margin-bottom: 12px;
+   
+}
+
+#footerTop {
+   color: #c7af9c;
+   margin-bottom: 24px; 
+   font-size: 1em;
+}
+
+footer p, footer address, footer dl { 
+   max-width: 360px; 
+   color: #c7af9c; 
+   font-size: 14px; 
+   font-style: normal; 
+   line-height: 1.9; 
+}
+
+.footerInfo  { 
+   margin-bottom: 20px; 
+}
+
+footer dl { 
+   display: grid;
+   max-width: 320px; 
+   grid-template-columns: 1fr auto; 
+   column-gap: 24px; 
+}
+
+footer dd {
+   margin: 0; 
+}
+
+footer a:hover { 
+   color: white; 
+}
+
+
+
+
 
 
 
