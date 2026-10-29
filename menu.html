@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+         Project Name: Group 3 Sweet Clover Bakery Site
+        Author(s):Riley Fain, Carter Gebhards, Ava Wohlenhaus
+        Date: 10/16/2026
+         Filename: menu.html
+   
+      -->
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sweet Clover Bakery | Maryville, Missouri</title>
+    <link href="styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <div class="headerContent">
+            <a class="brand" href="index.html" label="Sweet Clover Bakery home">
+                <img class="headerLogo" src="logos/sweetclover.png" alt="Sweet Clover Bakery" />
+            </a>
+            <nav class="desktopNav" label="Primary navigation">
+                <a class="activeNavLink " href="index.html">Home</a>
+                <a class="navLink" href="menu.html">Menu</a>
+                <a class="navLink" href="events.html">Events</a>
+            </nav>
+            <a class="buttonDark" href="menu.html#order">Order pickup <span>→</span></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="pageHead">
+            <p class="introLine">From our ovens</p>
+            <h1 class=pageTitle>The menu</h1>
+            <p class="pageBlurb">Familiar favorites, seasonal ingredients, and a little something sweet. Our selection changes often and is always made by hand.</p>
+            <a class="buttonDark" href="#order">Order ahead <span>→</span></a>
+        </section>
+        <section id="menuContent">
+            <nav id="menuCatagories">
+                <a href="#breakfastPastries">Breakfast &amp; pastries</a>
+                <a href="#Breads">Breads</a>
+                <a href="#cookiesTreats">Cookies &amp; treats</a>
+                <a href="#Seasonal">Seasonal specials</a>
+                <a href="#customDesserts">Custom cakes &amp; desserts</a>
+            </nav>
+            <div id="menuSections">
+                <article class="menuSection" id="breakfastPasteries">
+                    <div class="sectionTitle">
+                        <h2>Breakfast &amp; Pasteries</h2>
+                    </div>
+                    <div class="sectionItems">
+                        <div class="sectionItem"><img src="menuimages/bCroissant.avif" alt="Butter croissant" />
+                            <div class="itemCopy">
+                                <h3>Butter croissant</h3>
+                                <p>Flaky, buttery French-style pastry</p> <span class="price">$3.25</span>
+                            </div>
+                        </div>
+                        <div class="sectionItem"><img src="menuimages/cCroissant.jpg" alt="Chocolate croissant" />
+                            <div class="itemCopy">
+                                <h3>Chocolate croissant</h3>
+                                <p>Croissant filled with dark chocolate</p>
+                                <span class="price">$3.75</span>
+                            </div>
+                        </div>
+                        <div class="sectionItem"><img src="menuimages/cinRoll.avif" alt="Cinnamon roll" />
+                            <div class="itemCopy">
+                                <h3>Cinnamon roll</h3>
+                                <p>Soft roll with cinnamon filling and vanilla glaze</p>
+                                <span class="price">$4.25</span>
+                            </div>
+                        </div>
+                        <div class="sectionItem"><img src="menuimages/bMuffin.jpg" alt="Blueberry Muffin" />
+                            <div class="itemCopy">
+                                <h3>Blueberry Muffin</h3>
+                                <p>Fresh blueberries with a crumb topping</p>
+                                <span class="price">$3.25</span>
+                            </div>
+                        </div>
+                        <div class="sectionItem"><img src="menuimages/lpMuffin.jpg" alt="Lemon Poppyseed Muffin" />
+                            <div class="itemCopy">
+                                <h3>Lemon Poppyseed Muffin</h3>
+                                <p>Bright lemon flavor with poppy seeds</p>
+                                <span class="price">$3.25</span>
+                            </div>
+                        </div>
+                        <div class="sectionItem"><img src="menuimages/scone.jpg" alt="Seasonal Scone" />
+                            <div class="itemCopy">
+                                <h3>Seasonal Scone</h3>
+                                <p>Rotating seasonal flavor</p>
+                                <span class="price">$3.50</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="menuSection" id="Breads">
+                    <div class="sectionTitle">
+                        <h2>Breads</h2>
+                    </div>
+                    <div class="sectionItems">
+                        <div class="sectionItem"><img src="menuimages/sourdough.avif" alt="Classic sourdough" />
+                            <div class="itemCopy">
+                                <h3>Classic sourdough</h3>
+                                <p>Crisp crust with a chewy interior</p>
+                                <span class="price">$7.50</span>
+                            </div>
+                        </div>
+                        <div class="sectionItem"><img src="menuimages/honeyWheat.avif" alt="Honey wheat" />
+                            <div class="itemCopy">
+                                <h3>Honey wheat</h3>
+                                <p>Soft wheat bread lightly sweetened with honey</p>
+                                <span class="price">$6.50</span>
+                            </div>
+                        </div>
+                        <div class="sectionItem"><img src="menuimages/rgFocaccia.jpg" alt="Rosemary garlic focaccia" />
+                            <div class="itemCopy">
+                                <h3>Rosemary garlic focaccia</h3>
+                                <p>Olive oil bread with rosemary and roasted garlic</p>
+                                <span class="price">$7.00</span>
+                            </div>
+                        </div>
+                        <div class="sectionItem"><img src="menuimages/crBread.avif" alt="Cinnamon raisin" />
+                            <div class="itemCopy">
+                                <h3>Cinnamon raisin</h3>
+                                <p>Sweet bread with cinnamon and raisins</p>
+                                <span class="price">$7.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="menuSection" id="cookiesTreats">
+                    <div class="sectionTitle">
+                        <h2>Cookies &amp; Treats</h2>
+                    </div>
+                    <div class="sectionItems">
+                        <div class="sectionItem"><img src="menuimages/cChip.jpg" alt="Chocolate chip cookie" />
+                            <div class="itemCopy">
+                                <h3>Chocolate chip cookie</h3>
+                                <p>Classic chocolate chip cookie</p>
+                                <span class="price">$2.50</span>
+                            </div>
+                        </div>
+                        <div class="sectionItem"><img src="menuimages/dChocolate.jpg" alt="Double chocolate cookie" />
+                            <div class="itemCopy">
+                                <h3>Double chocolate cookie</h3>
+                                <p>Rich chocolate cookie with chocolate chips</p>
+                                <span class="price">$2.75</span>
+                            </div>
+                        </div>
+                        <div class="sectionItem"><img src="menuimages/sugarCookie.jpg" alt="Sugar cookie" />
+                            <div class="itemCopy">
+                                <h3>Sugar cookie</h3>
+                                <p>Soft sugar cookie with vanilla icing</p>
+                                <span class="price">$2.50</span>
+                            </div>
+                        </div>
+                        <div class="sectionItem"><img src="menuimages/oatCream.jpg" alt="Oatmeal cream cookie"/>   
+                        <div class="itemCopy">
+                                <h3>Oatmeal cream pie</h3>
+                                <p>Soft oatmeal cookies with vanilla cream filling</p>
+                                <span class="price">$3.00</span>
+                            </div>
+                        </div>
+                        <div class="sectionItem"><img src="menuimages/brownie.jpg" alt="Brownie" />
+                            <div class="itemCopy">
+                                <h3>Brownie</h3>
+                                <p>Fudgy chocolate brownie</p>
+                                <span class="price">$3.25</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <p>Our menu changes seasonally. Availability may vary throughout the day. Please contact us about large orders or specific dietary needs.</p>
+            </div>
+        </section>
+
+        <section id="Seasonal">
+                <img src="menuimages/mapleCookies.jpg" alt="Fall Maple Cookies" />
+            <div class="seasonalCopy">
+                <div class="seasonalHeading">
+                    <p>Seasonal specials</p>
+                    <h2>Fall favorites.</h2>
+                </div>
+                <div class="seasonalItems">
+                    <article>
+                        <div>
+                            <h3>Apple Cinnamon Scones</h3>
+                            <p>Buttery scones filled with apples and cinnamon.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <h3>Pumpkin Spice Cupcakes</h3>
+                            <p>Pumpkin cupcakes topped with cinnamon cream-cheese frosting.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <h3>Maple Pecan Cookies</h3>
+                            <p>Soft cookies featuring maple and toasted pecans.</p>
+                        </div>
+                    </article>
+                    <article>
+                        <div>
+                            <h3>Caramel Apple Cake</h3>
+                            <p>Vanilla cake layered with apple filling and caramel buttercream.</p>
+                        </div>
+                    </article>
+                </div>
+                <aside ID="holidayInfo">
+                    <div>
+                        <p>Coming soon</p>
+                        <h3>Holiday Menu</h3>
+                        <p>Our holiday menu will feature seasonal cookies, pies, cakes, dessert boxes, and gift options.</p>
+                    </div>
+                    <a class="buttonDark" href="/events.html#email-list">Join Our Email List <span>→</span></a>
+                </aside>
+            </div>
+        </section>
+
+        <section class="menuSection" id="customDesserts">
+            <div class="cake-image">
+                <img src="menuimages/customCake.jpg" alt="Custom flower-topped celebration cake" />
+                <span class="imageLabel">Made for you</span>
+            </div>
+            <div>
+                <div class="sectionHeading">
+                    <p>Custom cakes &amp; desserts</p>
+                    <h2>Make it<br /><em>your own.</em></h2>
+                    <p class="sectionIntro">Whether you’re celebrating a birthday, graduation, wedding, anniversary, or just because, our custom desserts are made to fit your occasion.</p>
+                </div>
+                <div class="optionsLayout">
+                    <div class="customOpt">
+                        <h3>Celebration cakes</h3>
+                        <p>6-inch · 8-inch · 10-inch · Sheet cakes</p>
+                    </div>
+                    <div class="customOpt">
+                        <h3>Popular flavors</h3>
+                        <p>Vanilla · Chocolate · Red velvet · Lemon · Strawberry · Marble</p>
+                    </div>
+                    <div class="customOpt">
+                        <h3>Frosting options</h3>
+                        <p>Vanilla buttercream · Chocolate buttercream · Cream cheese · Strawberry buttercream · Lemon buttercream</p>
+                    </div>
+                    <div class="customOpt">
+                        <h3>Custom cookies</h3>
+                        <p>Decorated sugar cookies · Logo cookies · Graduation cookies · Birthday cookies · Holiday cookies · Baby shower cookies</p>
+                    </div>
+                    <div class="customOpt">
+                        <h3>Dessert boxes</h3>
+                        <p>Cookies · Brownies · Mini cupcakes · Dessert bars · Seasonal treats</p>
+                    </div>
+                </div>
+                <div id="orderPhone">
+                    <p>Ready to place a custom order? Call the bakery to talk through your dessert, design, quantity, and pickup date.</p><a href="tel:+16605550147">(660) 555-0147</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="order">
+            <div class="order-layout">
+                <div>
+                    <div class="sectionHeading">
+                        <p>Order ahead</p>
+                        <h2>We’ll have it ready.</h2>
+                    </div>
+                    <p class="sectionIntro">Place a pickup request and we’ll call to confirm availability and payment within one business day.</p>
+                    <div>
+                        <p>Pickup Monday–Saturday<br />Please allow 48 hours for standard orders.</p>
+                    </div>
+                </div>
+                <form id="ordeForm" action="mailto:hello@whiskandcrumb.example" method="post" enctype="text/plain">
+                    <label class="field"><span>Name</span><input name="Name" required placeholder="Your name" /></label>
+                    <label class="field"><span>Phone</span><input name="Phone" required type="tel" placeholder="(660) 555-0123" /></label>
+                    <label class="field"><span>Email</span><input name="Email" required type="email" placeholder="you@example.com" /></label>
+                    <label class="field"><span>Pickup date</span><input name="Pickup date" required type="date" /></label>
+                    <fieldset class="orderOptions">
+                        <legend>Choose your items</legend>
+                        <div class="orderItem">
+                            <label class="field"><span>Item 1</span><select name="Item 1" required>
+                                    <option value="" selected disabled>Select a menu item</option>
+                                    <optgroup label="Breakfast &amp; pastries">
+                                        <option>Butter croissant — $3.25</option>
+                                        <option>Chocolate croissant — $3.75</option>
+                                        <option>Cinnamon roll — $4.25</option>
+                                        <option>Blueberry muffin — $3.25</option>
+                                        <option>Lemon poppyseed muffin — $3.25</option>
+                                        <option>Seasonal scone — $3.50</option>
+                                    </optgroup>
+                                    <optgroup label="Breads">
+                                        <option>Classic sourdough — $7.50</option>
+                                        <option>Honey wheat — $6.50</option>
+                                        <option>Rosemary garlic focaccia — $7.00</option>
+                                        <option>Cinnamon raisin — $7.00</option>
+                                    </optgroup>
+                                    <optgroup label="Cookies &amp; treats">
+                                        <option>Chocolate chip cookie — $2.50</option>
+                                        <option>Double chocolate cookie — $2.75</option>
+                                        <option>Sugar cookie — $2.50</option>
+                                        <option>Oatmeal cream pie — $3.00</option>
+                                        <option>Brownie — $3.25</option>
+                                    </optgroup>
+                                    <optgroup label="Seasonal specials">
+                                        <option>Apple Cinnamon Scones</option>
+                                        <option>Pumpkin Spice Cupcakes</option>
+                                        <option>Maple Pecan Cookies</option>
+                                        <option>Caramel Apple Cake</option>
+                                    </optgroup>
+                                </select></label>
+                            <label class="field quantity"><span>Quantity</span><select name="Quantity 1" required>
+                                    <option value="" selected disabled>Qty</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select></label>
+                        </div>
+                        <div class="orderItem">
+                            <label class="field"><span>Item 2 <i>Optional</i></span><select name="Item 2">
+                                    <option value="" selected>No additional item</option>
+                                    <optgroup label="Breakfast &amp; pastries">
+                                        <option>Butter croissant — $3.25</option>
+                                        <option>Chocolate croissant — $3.75</option>
+                                        <option>Cinnamon roll — $4.25</option>
+                                        <option>Blueberry muffin — $3.25</option>
+                                        <option>Lemon poppyseed muffin — $3.25</option>
+                                        <option>Seasonal scone — $3.50</option>
+                                    </optgroup>
+                                    <optgroup label="Breads">
+                                        <option>Classic sourdough — $7.50</option>
+                                        <option>Honey wheat — $6.50</option>
+                                        <option>Rosemary garlic focaccia — $7.00</option>
+                                        <option>Cinnamon raisin — $7.00</option>
+                                    </optgroup>
+                                    <optgroup label="Cookies &amp; treats">
+                                        <option>Chocolate chip cookie — $2.50</option>
+                                        <option>Double chocolate cookie — $2.75</option>
+                                        <option>Sugar cookie — $2.50</option>
+                                        <option>Oatmeal cream pie — $3.00</option>
+                                        <option>Brownie — $3.25</option>
+                                    </optgroup>
+                                    <optgroup label="Seasonal specials">
+                                        <option>Apple Cinnamon Scones</option>
+                                        <option>Pumpkin Spice Cupcakes</option>
+                                        <option>Maple Pecan Cookies</option>
+                                        <option>Caramel Apple Cake</option>
+                                    </optgroup>
+                                </select></label>
+                            <label class="field quantity"><span>Quantity</span><select name="Quantity 2">
+                                    <option value="" selected>Qty</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select></label>
+                        </div>
+                        <div class="orderItem">
+                            <label class="field"><span>Item 3 <i>Optional</i></span><select name="Item 3">
+                                    <option value="" selected>No additional item</option>
+                                    <optgroup label="Breakfast &amp; pastries">
+                                        <option>Butter croissant — $3.25</option>
+                                        <option>Chocolate croissant — $3.75</option>
+                                        <option>Cinnamon roll — $4.25</option>
+                                        <option>Blueberry muffin — $3.25</option>
+                                        <option>Lemon poppyseed muffin — $3.25</option>
+                                        <option>Seasonal scone — $3.50</option>
+                                    </optgroup>
+                                    <optgroup label="Breads">
+                                        <option>Classic sourdough — $7.50</option>
+                                        <option>Honey wheat — $6.50</option>
+                                        <option>Rosemary garlic focaccia — $7.00</option>
+                                        <option>Cinnamon raisin — $7.00</option>
+                                    </optgroup>
+                                    <optgroup label="Cookies &amp; treats">
+                                        <option>Chocolate chip cookie — $2.50</option>
+                                        <option>Double chocolate cookie — $2.75</option>
+                                        <option>Sugar cookie — $2.50</option>
+                                        <option>Oatmeal cream pie — $3.00</option>
+                                        <option>Brownie — $3.25</option>
+                                    </optgroup>
+                                    <optgroup label="Seasonal specials">
+                                        <option>Apple Cinnamon Scones</option>
+                                        <option>Pumpkin Spice Cupcakes</option>
+                                        <option>Maple Pecan Cookies</option>
+                                        <option>Caramel Apple Cake</option>
+                                    </optgroup>
+                                </select></label>
+                            <label class="field quantity"><span>Quantity</span><select name="Quantity 3">
+                                    <option value="" selected>Qty</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                    <option>4</option>
+                                    <option>5</option>
+                                    <option>6</option>
+                                    <option>7</option>
+                                    <option>8</option>
+                                    <option>9</option>
+                                    <option>10</option>
+                                    <option>11</option>
+                                    <option>12</option>
+                                </select></label>
+                        </div>
+                    </fieldset>
+                    <label class="field full"><span>Anything else we should know? <i>Optional</i></span><textarea rows="3" placeholder="Allergies, pickup timing, special requests..."></textarea></label>
+                    <button class="buttonDark" type="submit">Send pickup request <span>→</span></button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div id="footerTop">
+            <img src="logos/sweetclover2.png" alt="Sweet Clover Bakery Logo" id="footerLogo">
+            <p>Small-Batch breads, pastries, and cakes made from scratch in the heart of Maryville.</p>
+            <p>This site was created as part of the Web Development II course at Northwest Missouri State University and was developed to learn and enhance the concepts within that course. It is not intended for public use.</p>
+        </div>
+        <div class="footerInfo">
+            <p>CONTACT INFORMATION</p>
+            <p>Have a question about our menu or planning a special event? Get in touch with our team.</p>
+            <address>123 Main Street<br />Maryville, MO 64468<br /><a href="tel:+16605550147">(660) 555-0147</a><br /><a href="mailto:hello@whiskandcrumb.example">hello@whiskandcrumb.example</a></address>
+        </div>
+        <div class="footerInfo">
+            <p>BAKERY HOURS</p>
+            <dl>
+                <dt>Mon-Wed</dt>
+                <dd>7:00 a.m.-3:00 p.m.</dd>
+                <dt>Thur-Fri</dt>
+                <dd>7:00 a.m.-5:00 p.m.</dd>
+                <dt>Sat</dt>
+                <dd>8:00 a.m.-2:00 p.m.</dd>
+                <dt>Sun</dt>
+                <dd>Closed</dd>
+            </dl>
+        </div>
+    </footer>
+</body>
+
+</html>
