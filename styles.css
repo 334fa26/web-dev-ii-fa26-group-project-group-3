@@ -317,6 +317,86 @@ header {
     gap: 80px;
 }
 
+#Seasonal img {
+  position: sticky;
+  top: 112px;
+  width: 100%;
+  height: 620px;
+  object-fit: cover;
+}
+
+.seasonalHeading h2 {
+  color: #ffffff;
+     margin: 0;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+
+.seasonalHeading > p {
+ margin-bottom: 20px;
+  color: #c7af9c;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: .24em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.seasonalItems {
+  margin-top: 44px;
+  border-top: 1px solid #c7af9c;
+}
+
+.seasonalItems article {
+  display: grid;
+  padding: 24px 0;
+  grid-template-columns: 40px 1fr;
+  gap: 20px;
+  border-bottom: 1px solid #c7af9c;
+}
+
+.seasonalItems h3, .holidayInfo h3 {
+  margin: 0;
+  font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.seasonalItems p {
+  margin: 8px 0 0;
+  color: #c7af9c;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.holidayInfo {
+  display: grid;
+  margin-top: 40px;
+  padding: 32px;
+  grid-template-columns: 1fr auto;
+  align-items: end;
+  gap: 32px;
+  border-top: 8px solid #b0d399;
+  background: #ffffff;
+  color: #231f20;
+}
+
+.holidayInfo p {
+  margin-bottom: 12px;
+  color: #a98467;
+}
+
+.holidayInfo p:last-child {
+  max-width: 520px;
+  margin: 10px 0 0;
+  color: #5c4a3e;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+
 
 
 
@@ -389,9 +469,6 @@ footer dd {
 footer a:hover {
     color: white;
 }
-
-
-
 
 
 
