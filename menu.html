@@ -225,10 +225,10 @@
                 <img src="menuimages/customCake.jpg" alt="Custom flower-topped celebration cake" />
             </div>
             <div>
-                <div class="sectionHeading">
+                <div id="customHeading">
                     <p>Custom cakes &amp; desserts</p>
-                    <h2>Make it<br /><em>your own.</em></h2>
-                    <p class="sectionIntro">Whether you’re celebrating a birthday, graduation, wedding, anniversary, or just because, our custom desserts are made to fit your occasion.</p>
+                    <h2>Make it<br />your own.</h2>
+                    <p id="customIntro">Whether you’re celebrating a birthday, graduation, wedding, anniversary, or just because, our custom desserts are made to fit your occasion.</p>
                 </div>
                 <div class="optionsLayout">
                     <div class="customOpt">
@@ -258,19 +258,19 @@
             </div>
         </section>
 
-        <section class="section" id="order">
-            <div class="order-layout">
-                <div>
-                    <div class="sectionHeading">
+        <section>
+            <div class="orderLayout">
+                <div id=orderLeft>
+                    <div class="orderHeading">
                         <p>Order ahead</p>
                         <h2>We’ll have it ready.</h2>
                     </div>
-                    <p class="sectionIntro">Place a pickup request and we’ll call to confirm availability and payment within one business day.</p>
-                    <div>
-                        <p>Pickup Monday–Saturday<br />Please allow 48 hours for standard orders.</p>
+                    <div  class="orderIntro">
+                    <p>Place a pickup request and we’ll call to confirm availability and payment within one business day.</p>
+                    <p>Pickup Monday–Saturday<br />Please allow 48 hours for standard orders.</p>
                     </div>
                 </div>
-                <form id="ordeForm" action="mailto:hello@whiskandcrumb.example" method="post" enctype="text/plain">
+                <form id="orderForm" action="mailto:hello@whiskandcrumb.example" method="post" enctype="text/plain">
                     <label class="field"><span>Name</span><input name="Name" required placeholder="Your name" /></label>
                     <label class="field"><span>Phone</span><input name="Phone" required type="tel" placeholder="(660) 555-0123" /></label>
                     <label class="field"><span>Email</span><input name="Email" required type="email" placeholder="you@example.com" /></label>
@@ -419,7 +419,8 @@
                                 </select></label>
                         </div>
                     </fieldset>
-                    <label class="field full"><span>Anything else we should know? <i>Optional</i></span><textarea rows="3" placeholder="Allergies, pickup timing, special requests..."></textarea></label>
+                    <label id="addInfo"><span>Anything else we should know? <i>Optional</i></span>
+                        <textarea rows="3" placeholder="Allergies, pickup timing, special requests..."></textarea></label>
                     <button class="buttonDark" type="submit">Send pickup request <span>→</span></button>
                 </form>
             </div>
