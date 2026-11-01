@@ -810,6 +810,25 @@ footer a:hover {
 .storyCopy p {
     margin-bottom: 0;
 }
+.sectionBrown {
+    border-top: 8px solid #b0d399;
+    background: #5c4a3e
+}
+.splitLayout {
+    display: grid;
+    max-width: 1240px;
+    margin: auto;
+    grid-template-columns: .9fr 1.1fr;
+    align-items: center;
+    gap: 96px;
+}
+.storyLayout {
+    display: grid;
+    max-width: 1240px;
+    margin: auto;
+    grid-template-columns: .8fr 1.2fr;
+    gap: 96px;
+}
 
 
 
