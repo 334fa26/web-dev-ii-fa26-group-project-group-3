@@ -30,8 +30,6 @@ body {
     min-width: 320px;
     background: white;
     font-family: "DM Sans", sans-serif;
-    /*Sourced from ChatGPT (below)*/
-    overflow-x: hidden;
 }
 
 img {
@@ -104,12 +102,9 @@ header {
     height: 90px;
     object-fit: cover;
     object-position: bottom;
-    padding-bottom: 5px;
+    margin-bottom: 12px;
 }
 
-.headerContent .buttonDark {
-    display: none;
-}
 
 
 /* Navigation list styles */
@@ -215,98 +210,9 @@ header {
     line-height: 1.85;
 }
 
-/* Article Styles - Home Page */
-.homeBeg {
-    overflow: hidden;
-}
-
-.homeBegIn {
-    display: grid;
-    min-height: calc(100vh - 76px);
-    max-width: 1400px;
-    margin: auto;
-    padding: 64px 56px;
-    grid-template-columns: .82fr 1.18fr;
-    align-items: center;
-    gap: 64px;
-}
-
-.homeCopy {
-    position: relative;
-    z-index: 2;
-}
-
-.homeCopy h1 {
-    margin: 0;
-    color: #4d613d;
-    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
-    font-size: clamp(4.4rem, 8vw, 8rem);
-    font-weight: 400;
-    line-height: .78;
-    letter-spacing: -.055em;
-}
-
-.lead {
-    max-width: 450px;
-    margin-top: 32px;
-    color: #807e7e;
-    font-size: 15px;
-    line-height: 1.85;
-}
-
-.homeImage {
-    position: relative;
-    min-height: 680px;
-}
-
-.homeImage > img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50% 50% 0 0;
-}
-
-.marquee {
-    overflow: hidden;
-    padding: 16px 0;
-    border-top: 1px solid #c7af9c;
-    border-bottom: 1px solid #c7af9c;
-    color: #807e7e;
-    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
-    font-size: 20px;
-    font-style: italic;
-    white-space: nowrap;
-    text-align: center;
-}
-
-.featureImage {
-    position: relative;
-    max-width: 512px;
-    margin: auto;
-    padding: 0 0 40px 32px;
-}
-
-.featureImage img {
-    width: 100%;
-    aspect-ratio: 4/5;
-    object-fit: cover;
-}
-
-.gallerySection {
-    padding-top: 112px;
-    padding-bottom: 112px;
-    background: #4d613d;
-    color: #ffffff;
-}
-
-.gallerySection h2 {
-    color: #ffffff;
-}
-
 /*Article Styles - MENU*/
 #menuContent {
-    padding: 0 56px 20px;
+    padding: 0 56px 112px;
     max-width: 1120px;
     margin: auto;
 }
@@ -339,13 +245,16 @@ header {
 }
 
 .menuSection {
+    display: grid;
     scroll-margin-top: 120px;
+    grid-template-columns: .6fr 1.4fr;
+    gap: 80px;
 }
 
 .sectionTitle h2 {
     margin: 0;
     font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
-    font-size: 30px;
+    font-size: 48px;
     font-weight: 400;
     line-height: 1;
 }
@@ -378,7 +287,7 @@ header {
 .itemCopy h3 {
     margin: 0;
     font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 400;
     line-height: 1.25;
 }
@@ -403,13 +312,22 @@ header {
     display: grid;
     max-width: 1240px;
     margin: auto;
+    grid-template-columns: .8fr 1.2fr;
     align-items: start;
     gap: 80px;
     padding: 40px;
 }
 
+#Seasonal img {
+    position: sticky;
+    top: 112px;
+    width: 100%;
+    height: 620px;
+    object-fit: cover;
+}
+
 .seasonalHeading h2 {
-    color: #b0d399;
+    color: #ffffff;
     margin: 0;
     font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
     font-size: 48px;
@@ -428,9 +346,6 @@ header {
     text-transform: uppercase;
 }
 
-#Seasonal img {
-    display:none;
-}
 .seasonalItems {
     margin-top: 44px;
     border-top: 1px solid #c7af9c;
@@ -448,7 +363,7 @@ header {
 .holidayInfo h3 {
     margin: 0;
     font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 400;
 }
 
@@ -463,6 +378,7 @@ header {
     display: grid;
     margin-top: 40px;
     padding: 32px;
+    grid-template-columns: 1fr auto;
     align-items: end;
     gap: 32px;
     border-top: 8px solid #b0d399;
@@ -496,14 +412,14 @@ header {
     padding: 40px;
 }
 
-#customDesserts img {
+#customDesserts img{
     position: relative;
     width: 100%;
 }
 
 #customHeading h2 {
     max-width: 672px;
-    color: #b0d399;
+     color: #b0d399;
     margin: 0;
     font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
     font-size: 48px;
@@ -512,7 +428,7 @@ header {
 }
 
 #customHeading p {
-    margin-bottom: 20px;
+     margin-bottom: 20px;
     color: #c7af9c;
     font-size: 10px;
     font-weight: 600;
@@ -521,8 +437,8 @@ header {
     text-transform: uppercase;
 }
 
-#customHeading #customIntro {
-    margin: 8px 0 0;
+#customHeading #customIntro{
+     margin: 8px 0 0;
     font-size: 14px;
     text-transform: initial;
     font-weight: initial;
@@ -530,26 +446,27 @@ header {
 }
 
 .optionsLayout {
-    display: grid;
-    margin-top: 36px;
-    border-bottom: 1px solid #c7af9c;
-    column-gap: 32px;
+display: grid;
+  margin-top: 36px;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 1px solid #c7af9c;
+  column-gap: 32px;
 }
 
 .customOpt {
     padding: 20px 0;
-    border-top: 1px solid #c7af9c;
+  border-top: 1px solid #c7af9c;
 }
 
 .customOpt > h3 {
     color: #b0d399;
     font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
-    font-size: 18px;
+    font-size: 28px;
     margin: 0;
 }
 
 .customOpt > p {
-    margin: 8px 0 0;
+     margin: 8px 0 0;
     color: #ffffff;
     font-size: 14px;
     line-height: 1.7;
@@ -573,8 +490,8 @@ header {
 
 #orderPhone a {
     color: #b0d399;
-    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
-    font-size: 28px;
+  font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+  font-size: 28px;
 }
 
 #orderPhone a:hover {
@@ -583,12 +500,13 @@ header {
 
 .orderLayout {
     display: grid;
-    max-width: 1120px;
-    margin: auto;
+  max-width: 1120px;
+  margin: auto;
+  grid-template-columns: .6fr 1.4fr;
 }
 
 .orderHeading p {
-    margin-bottom: 20px;
+     margin-bottom: 20px;
     color: #a98467;
     font-size: 10px;
     font-weight: 600;
@@ -598,7 +516,7 @@ header {
 }
 
 .orderHeading h2 {
-    color: #231f20;
+      color: #231f20;
     margin: 0;
     font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
     font-size: 48px;
@@ -616,26 +534,25 @@ header {
 }
 
 #orderLeft {
-    padding: 40px;
+    padding:40px;
 }
 
 #orderForm {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 0 40px 40px 40px;
+    padding: 80px 40px 40px 40px; 
 }
 
 #orderForm > .field {
     padding: 10px;
 }
 
-.field {
+.field{
     display: grid;
     gap: 10px;
 }
 
-.field > span,
-#addInfo > span {
+.field > span, #addInfo > span{
     color: #5c4a3e;
     font-size: 1em;
     letter-spacing: 0.1em;
@@ -643,10 +560,9 @@ header {
     font-weight: 500;
 }
 
-.field i,
-#addInfo i {
+.field i, #addInfo i {
     color: #807e7e;
-
+    
 }
 
 #addInfo {
@@ -655,9 +571,7 @@ header {
     padding-bottom: 20px;
 }
 
-.field input,
-.field select,
-#addInfo textarea {
+.field input, .field select, #addInfo textarea {
     width: 100%;
     border: 1px solid #5c4a3e;
     border-radius: 0;
@@ -681,7 +595,7 @@ header {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
-
+    
 }
 
 
@@ -749,8 +663,6 @@ footer a:hover {
     color: white;
 }
 
-<<<<<<< HEAD
-=======
 /* Home Page */
 .homeBeg {
     overflow: hidden;
@@ -918,7 +830,83 @@ footer a:hover {
     gap: 96px;
 }
 
->>>>>>> 6081d15f690b616f0f91737a9ee2c76dbbbfce20
+
+/* Events Page */
+.eventRow {
+    display: grid;
+    padding: 46px 0;
+    grid-template-columns: 90px 1fr 1.1fr auto;
+    align-items: center;
+    gap: 32px;
+    border-bottom: 1px solid #c7af9c;
+}
+.eventDate {
+    color: #a98467;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 30px;
+    font-style: italic;
+}
+.eventRow h2 {
+    margin: 0;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+}
+.eventDeets {
+    color: #807e7e;
+    font-size: 14px;
+    line-height: 1.7;
+}
+#newsletter {
+    padding: 80px;
+    background: #a98467;
+    color: #ffffff;
+    text-align: center;
+}
+#newsletter h2 {
+    margin: 0;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+}
+#newsletter form {
+    display: flex;
+    max-width: 512px;
+    margin: 32px auto 0;
+    border-bottom: 1px solid #ffffff;
+}
+#newsletter input {
+    width: 100%;
+    padding: 16px;
+    border: 0;
+    background: transparent;
+    color: #ffffff;
+    outline: 0;
+}
+#newsletter input::placeholder {
+    color: #c7af9c;
+}
+#newsletter button {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    gap: 8px;
+    border: 0;
+    background: transparent;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.eventsLabel {
+    margin: 0;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c7af9c;
+}
+
+
 
 
 
@@ -926,88 +914,19 @@ footer a:hover {
    Tablet and Desktop Styles: greater than 510px
    =============================================
 */
-@media only screen and (min-width:511px) {
-    .holidayInfo h3 {
-        font-size: 28px;
-    }
-    
-    .seasonalItems h3 {
-        font-size: 28px;
-    }
-    
-    .customOpt > h3 {
-        font-size: 28px;
-    }
-}
+@media only screen and (min-width:511px) {}
 
 /* =============================================
    Tablet and Desktop Styles: greater than 640px
    =============================================
 */
-@media only screen and (min-width:641px) {
-    #holidayInfo {
-        grid-template-columns: 1fr auto;
-    }
-    .optionsLayout {
-    grid-template-columns: 1fr 1fr;
-    }
-}
+@media only screen and (min-width:641px) {}
 
 /* =============================================
    Tablet and Desktop Styles: greater than 720px
    =============================================
 */
-@media only screen and (min-width: 721px) {
-    .headerContent .buttonDark {
-        display: inline-flex;
-    }
-
-    .menuSection {
-        display: grid;
-        grid-template-columns: .6fr 1.4fr;
-        gap: 80px;
-    }
-
-    .sectionTitle h2 {
-        font-size: 28px;
-
-    }
-
-    .itemCopy h3 {
-        font-size: 25px;
-    }
-    
-    #Seasonal {
-        display:grid;
-         grid-template-columns: .8fr 1.2fr
-    }
-    
-    #Seasonal img {
-    display: grid;
-    position: sticky;
-    top: 112px;
-    width: 100%;
-    height: 620px;
-    object-fit: cover;
-}
-    
-    #customDesserts img {
-        display: grid;
-    position: sticky;
-    top: 112px;
-    width: 100%;
-    height: 620px;
-    object-fit: cover;
-    }
-
-    .orderLayout {
-         grid-template-columns: .6fr 1.4fr;
-    }
-    
-    #orderForm {
-        padding: 80px 40px 40px 40px;
-    }
-}
+@media only screen and (min-width: 721px) {}
 
 /* =============================================
    Tablet and Desktop Styles: greater than 1020px
