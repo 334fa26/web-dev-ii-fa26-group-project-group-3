@@ -740,6 +740,76 @@ footer a:hover {
 .gallerySection h2 {
     color: #ffffff;
 }
+.galleryHeading {
+    display: flex;
+    margin-bottom: 48px;
+    align-items: end;
+    justify-content: space-between;
+    gap: 24px;
+}
+.galleryHeading > p {
+    max-width: 320px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.galleryGrid {
+    display: grid;
+    grid-template-columns: 1.25fr .75fr .75fr;
+    grid-template-rows: 220px 220px;
+    gap: 12px;
+}
+.galleryGrid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(.75);
+    transition: filter 250ms ease;
+}
+.galleryGrid img:hover {
+    filter: saturate(1);
+}
+.galleryGrid img:first-child {
+    grid-row: span 2;
+}
+.galleryGrid img:last-child {
+    grid-column: span 2;
+}
+.timeline {
+    display: grid;
+    gap: 56px;
+}
+.timeline article {
+    display: grid;
+    padding-top: 24px;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+    border-top: 1px solid #c7af9c;
+    
+}
+.timelineDate {
+    color: #a98467;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 24px;
+    font-style: italic;
+}
+.timeline h3 {
+    margin-bottom: 12px;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+.storyCopy {
+    display: grid;
+    max-width: 620px;
+    margin-top: 32px;
+    gap: 16px;
+    color: #807e7e;
+    font-size: 15px;
+    line-height: 1.75;
+}
+.storyCopy p {
+    margin-bottom: 0;
+}
 
 
 
