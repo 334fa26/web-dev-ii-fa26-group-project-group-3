@@ -179,7 +179,45 @@ header {
     transform: translateY(-2px);
 }
 
+.buttonRow .buttonDark {
+    margin-right: 20px;
+}
 
+.textLink {
+    display: inline-flex;
+    padding-bottom: 6px;
+    align-items: center;
+    gap: 11px;
+    border-bottom: 1px solid #a98467;
+    color: #4d613d;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    margin-top: 36px;
+}
+
+.textLink:hover {
+    color: #a98467;
+}
+
+.textLinkLight {
+    display: inline-flex;
+    padding-bottom: 6px;
+    align-items: center;
+    gap: 11px;
+    border-bottom: 1px solid #a98467;
+    color: #a98467;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    margin-top: 36px;
+}
+
+.textLinkLight:hover {
+    color: #ffffff;
+}
 
 /* Article Styles */
 .pageHead {
@@ -340,8 +378,9 @@ header {
 }
 
 #Seasonal img {
-    display:none;
+    display: none;
 }
+
 .seasonalItems {
     margin-top: 44px;
     border-top: 1px solid #c7af9c;
@@ -607,11 +646,8 @@ header {
 
 /* Page footer styles */
 footer {
-    display: grid;
     background: #231f20;
     color: white;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 50px;
     padding: 80px 6%;
 }
 
@@ -631,10 +667,18 @@ footer {
     font-size: 1em;
 }
 
+#footerBlurb {
+    display: none;
+}
+
+#infoBlurb {
+    display: none;
+}
+
 footer p,
 footer address,
 footer dl {
-    max-width: 360px;
+    max-width: 100%;
     color: #c7af9c;
     font-size: 14px;
     font-style: normal;
@@ -643,6 +687,8 @@ footer dl {
 
 .footerInfo {
     margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
 }
 
 footer dl {
@@ -666,8 +712,7 @@ footer a:hover {
 }
 
 .homeBegIn {
-    display: grid;
-    min-height: calc(100vh - 76px);
+    min-height: calc(80vh - 76px);
     max-width: 1400px;
     margin: auto;
     padding: 64px 56px;
@@ -685,7 +730,7 @@ footer a:hover {
     margin: 0;
     color: #4d613d;
     font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
-    font-size: clamp(4.4rem, 8vw, 8rem);
+    font-size: clamp(3.4rem, 8vw, 8rem);
     font-weight: 400;
     line-height: .78;
     letter-spacing: -.055em;
@@ -700,16 +745,7 @@ footer a:hover {
 }
 
 .homeImage {
-    position: relative;
-    min-height: 680px;
-}
-
-.homeImage > img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50% 50% 0 0;
+    display: none;
 }
 
 .marquee {
@@ -726,23 +762,38 @@ footer a:hover {
 }
 
 .featureImage {
-    position: relative;
-    max-width: 512px;
-    margin: auto;
-    padding: 0 0 40px 32px;
+    display: none;
 }
 
 .featureImage img {
-    width: 100%;
-    aspect-ratio: 4/5;
-    object-fit: cover;
+    display: none;
 }
 
 .gallerySection {
-    padding-top: 112px;
-    padding-bottom: 112px;
+    padding: 40px 40px 112px 40px;
     background: #4d613d;
     color: #ffffff;
+}
+
+.sectionHeadingGallery > p {
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .24em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.sectionHeadingGallery > h2 {
+    margin: 0;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: .96;
+    letter-spacing: -.03em;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    max-width: 672px;
 }
 
 .gallerySection h2 {
@@ -750,8 +801,7 @@ footer a:hover {
 }
 
 .galleryHeading {
-    display: flex;
-    margin-bottom: 48px;
+    margin-bottom:30px;
     align-items: end;
     justify-content: space-between;
     gap: 24px;
@@ -792,7 +842,7 @@ footer a:hover {
 
 .timeline {
     display: grid;
-    gap: 56px;
+    gap: 20px;
 }
 
 .timeline article {
@@ -821,9 +871,8 @@ footer a:hover {
 .storyCopy {
     display: grid;
     max-width: 620px;
-    margin-top: 32px;
     gap: 16px;
-    color: #807e7e;
+    color: #ffffff;
     font-size: 15px;
     line-height: 1.75;
 }
@@ -837,48 +886,27 @@ footer a:hover {
     background: #5c4a3e
 }
 
-.splitLayout {
-    display: grid;
+.storyLayout {
     max-width: 1240px;
     margin: auto;
-    grid-template-columns: .9fr 1.1fr;
     align-items: center;
     gap: 96px;
+    padding: 40px;
 }
 
 .storyLayout {
-    display: grid;
     max-width: 1240px;
     margin: auto;
-    grid-template-columns: .8fr 1.2fr;
     gap: 96px;
 }
-.textLink {
-    display: inline-flex;
-    padding-bottom: 6px;
-    align-items: center;
-    gap: 11px;
-    border-bottom: 1px solid #a98467;
-    color: #4d613d;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-}
-.textLink:hover {
-    color: #a98467;
-}
-.spacedLink {
-    margin-top: 36px;
-}
+
 .sectionHeading {
+    padding-top: 40px;
+    padding-bottom: 40px;
     max-width: 672px;
 }
-.storyTitle {
-    position: sticky;
-    top: 128px;
-    align-self: start;
-}
+
+
 .sectionHeading p {
     margin-top: 20px;
     color: #a98467;
@@ -888,6 +916,7 @@ footer a:hover {
     line-height: 1.5;
     text-transform: uppercase;
 }
+
 .sectionHeading h2 {
     margin: 0;
     font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
@@ -896,6 +925,7 @@ footer a:hover {
     line-height: .96;
     letter-spacing: -.03em;
 }
+
 .sectionBrown .sectionHeading h2 {
     color: #ffffff;
 }
@@ -904,7 +934,7 @@ footer a:hover {
 
 .eventsLabel {
     margin: 0;
-   padding-right:46px;
+    padding-right: 46px;
     padding-left: 46px;
     padding-bottom: 20px;
     border-bottom: 1px solid #c7af9c;
@@ -1002,28 +1032,38 @@ footer a:hover {
    =============================================
 */
 @media only screen and (min-width:511px) {
+   
+    .galleryHeading {
+        display: flex;
+    }
+    
     .holidayInfo h3 {
         font-size: 28px;
     }
-    
+
     .seasonalItems h3 {
         font-size: 28px;
     }
-    
+
     .customOpt > h3 {
         font-size: 28px;
     }
-    
+
     .eventRow h2 {
         font-size: 38px;
     }
-    
+
     .eventDate {
         font-size: 28px;
     }
-    
+
     #newsletter h2 {
         font-size: 60px;
+    }
+    
+     #footerLower {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -1032,16 +1072,26 @@ footer a:hover {
    =============================================
 */
 @media only screen and (min-width:641px) {
+    .homeCopy h1 {
+        font-size: clamp(4.4rem, 8vw, 8rem);
+    }
+
+    
     #holidayInfo {
         grid-template-columns: 1fr auto;
     }
+
     .optionsLayout {
-    grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
-    
+
     #newsletter {
         padding: 80px;
     }
+
+    
+
+    
 }
 
 /* =============================================
@@ -1052,6 +1102,53 @@ footer a:hover {
     .headerContent .buttonDark {
         display: inline-flex;
     }
+
+    .storyLayout {
+        display: grid;
+        grid-template-columns: .8fr 1.2fr;
+    }
+    
+    .homeBegIn {
+        display: grid;
+    }
+    
+    .homeImage {
+        display: grid;
+        position: relative;
+        min-height: 680px;
+    }
+
+    .homeImage > img {
+        display: grid;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50% 50% 0 0;
+    }
+    
+    .featureImage {
+    display: grid;
+        position: relative;
+    max-width: 512px;
+    margin: auto;
+    padding: 40px 0 40px 32px;
+}
+
+.featureImage img {
+    display: grid;
+        position: sticky;
+        top: 112px;
+        width: 100%;
+        height: 620px;
+        object-fit: cover;
+}
+    
+    .storyTitle {
+    position: sticky;
+    top: 128px;
+    align-self: start;
+}
 
     .menuSection {
         display: grid;
@@ -1067,48 +1164,70 @@ footer a:hover {
     .itemCopy h3 {
         font-size: 25px;
     }
-    
+
     #Seasonal {
-        display:grid;
-         grid-template-columns: .8fr 1.2fr
+        display: grid;
+        grid-template-columns: .8fr 1.2fr
     }
-    
+
     #Seasonal img {
-    display: grid;
-    position: sticky;
-    top: 112px;
-    width: 100%;
-    height: 620px;
-    object-fit: cover;
-}
-    
+        display: grid;
+        position: sticky;
+        top: 112px;
+        width: 100%;
+        height: 620px;
+        object-fit: cover;
+    }
+
     #customDesserts img {
         display: grid;
-    position: sticky;
-    top: 112px;
-    width: 100%;
-    height: 620px;
-    object-fit: cover;
+        position: sticky;
+        top: 112px;
+        width: 100%;
+        height: 620px;
+        object-fit: cover;
     }
 
     .orderLayout {
-         grid-template-columns: .6fr 1.4fr;
+        grid-template-columns: .6fr 1.4fr;
     }
-    
+
     #orderForm {
         padding: 80px 40px 40px 40px;
     }
-    
+
     .eventRow {
         display: grid;
         grid-template-columns: 90px 1fr 1.1fr auto;
     }
+    
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+        width: 100%;
+
+    }
+    
+    #footerBlurb {
+        display: grid;
+    }
+    
+    #infoBlurb {
+        display: grid;
+    }
+   
+}
+    
+    
+    
 }
 
 /* =============================================
    Tablet and Desktop Styles: greater than 1020px
    =============================================
 */
+
 
 
 @media only screen and (min-width: 1021px) {}
