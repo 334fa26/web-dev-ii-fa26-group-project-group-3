@@ -30,6 +30,8 @@ body {
     min-width: 320px;
     background: white;
     font-family: "DM Sans", sans-serif;
+    /*Sourced from ChatGPT*/
+    overflow-x: hidden;
 }
 
 img {
@@ -854,10 +856,24 @@ footer a:hover {
 
 
 /* Events Page */
+
+.eventsLabel {
+    margin: 0;
+   padding-right:46px;
+    padding-left: 46px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c7af9c;
+    margin-bottom: 20px;
+    color: #a98467;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .24em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
 .eventRow {
-    display: grid;
-    padding: 46px 0;
-    grid-template-columns: 90px 1fr 1.1fr auto;
+    padding: 46px;
     align-items: center;
     gap: 32px;
     border-bottom: 1px solid #c7af9c;
@@ -866,14 +882,14 @@ footer a:hover {
 .eventDate {
     color: #a98467;
     font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     font-style: italic;
 }
 
 .eventRow h2 {
     margin: 0;
     font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
-    font-size: 48px;
+    font-size: 28px;
     font-weight: 400;
 }
 
@@ -884,7 +900,7 @@ footer a:hover {
 }
 
 #newsletter {
-    padding: 80px;
+    padding: 46px;
     background: #a98467;
     color: #ffffff;
     text-align: center;
@@ -893,7 +909,7 @@ footer a:hover {
 #newsletter h2 {
     margin: 0;
     font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
-    font-size: 60px;
+    font-size: 30px;
     font-weight: 400;
 }
 
@@ -932,19 +948,6 @@ footer a:hover {
     cursor: pointer;
 }
 
-.eventsLabel {
-    margin: 0;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #c7af9c;
-    margin-bottom: 20px;
-    color: #a98467;
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: .24em;
-    line-height: 1.5;
-    text-transform: uppercase;
-}
-
 
 
 
@@ -965,6 +968,18 @@ footer a:hover {
     .customOpt > h3 {
         font-size: 28px;
     }
+    
+    .eventRow h2 {
+        font-size: 38px;
+    }
+    
+    .eventDate {
+        font-size: 28px;
+    }
+    
+    #newsletter h2 {
+        font-size: 60px;
+    }
 }
 
 /* =============================================
@@ -977,6 +992,10 @@ footer a:hover {
     }
     .optionsLayout {
     grid-template-columns: 1fr 1fr;
+    }
+    
+    #newsletter {
+        padding: 80px;
     }
 }
 
@@ -1033,6 +1052,11 @@ footer a:hover {
     
     #orderForm {
         padding: 80px 40px 40px 40px;
+    }
+    
+    .eventRow {
+        display: grid;
+        grid-template-columns: 90px 1fr 1.1fr auto;
     }
 }
 
