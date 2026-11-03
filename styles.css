@@ -1,33 +1,1039 @@
 @charset "utf-8";
 
 /*
-   Project Name:
-   Author(s):
-   Date:
+   Project Name: Group 3 Sweet Clover Bakery Site
+   Author(s):Riley Fain, Carter Gebhards, Ava Wohlenhaus
+   Date: 10/16/2026
    Filename: styles.css
 
 */
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap");
+
+:root {
+    font-family: "DM Sans", sans-serif;
+    color: #231f20;
+    background: #ffffff;
+}
 
 
 /* HTML and Body styles */
+* {
+    box-sizing: border-box;
+}
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    background: white;
+    font-family: "DM Sans", sans-serif;
+    /*Sourced from ChatGPT*/
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font: inherit;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+    outline: 2px solid #a98467;
+    outline-offset: 3px;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+    font-weight: 400;
+}
+
+p {
+    line-height: 1.8
+}
+
+em {
+    color: #5c4a3e;
+    font-weight: 400;
+}
 
 
 
 /* Header styles */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    border-bottom: 3px solid #c7af9c;
+    background: rgba(255, 255, 255, .96);
+}
 
+.headerContent {
+    display: flex;
+    height: 76px;
+    max-width: 1600px;
+    margin: auto;
+    padding: 0 56px;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.headerLogo {
+    width: 170px;
+    height: 90px;
+    object-fit: cover;
+    object-position: bottom;
+    padding-bottom: 5px;
+}
 
+.headerContent .buttonDark {
+    display: none;
+}
 
 /* Navigation list styles */
+.desktopNav {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
 
 
+.navLink {
+    position: relative;
+    color: #5c4a3e;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.activeNavLink {
+    position: relative;
+    color: #5c4a3e;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+
+.navLink::after {
+    position: absolute;
+    right: 0;
+    bottom: -9px;
+    left: 0;
+    height: 1px;
+    content: "";
+    background: #a98467;
+    transform: scaleX(0);
+    transition: transform 180ms ease;
+}
+
+.activeNavLink:hover::after,
+.activeNavLink::after {
+    transform: scaleX(1);
+}
+
+/* Button styles */
+.buttonDark {
+    display: inline-flex;
+    min-height: 48px;
+    padding: 0 22px;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border: 1px solid #4d613d;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    transition: 180ms ease;
+    background: #4d613d;
+    color: white;
+}
+
+.buttonDark:hover {
+    border-color: #85bc64;
+    background: #85bc64;
+    color: #231f20;
+    transform: translateY(-2px);
+}
+
+.buttonRow .buttonDark {
+    margin-right: 20px;
+}
+
+.textLink {
+    display: inline-flex;
+    padding-bottom: 6px;
+    align-items: center;
+    gap: 11px;
+    border-bottom: 1px solid #a98467;
+    color: #4d613d;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    margin-top: 36px;
+}
+
+.textLink:hover {
+    color: #a98467;
+}
+
+.textLinkLight {
+    display: inline-flex;
+    padding-bottom: 6px;
+    align-items: center;
+    gap: 11px;
+    border-bottom: 1px solid #a98467;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    margin-top: 36px;
+}
+
+.textLinkLight:hover {
+    color: #b0d399;
+}
 
 /* Article Styles */
+.pageHead {
+    padding: 140px 40px 60px;
+    text-align: center;
+}
 
+.introLine {
+    margin-bottom: 20px;
+    color: #4d613d;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .24em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.pageTitle {
+    color: #5c4a3e;
+    margin: 0;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 5em;
+    font-weight: 400;
+    line-height: .8;
+}
+
+.pageBlurb {
+    padding-bottom: 20px;
+    margin: 32px auto 0;
+    max-width: 580px;
+    color: #5c4a3e;
+    font-size: 15px;
+    line-height: 1.85;
+}
+
+/* Home Page */
+.homeBeg {
+    overflow: hidden;
+}
+
+.homeBegIn {
+    min-height: calc(80vh - 76px);
+    max-width: 1400px;
+    margin: auto;
+    padding: 64px 56px;
+    grid-template-columns: .82fr 1.18fr;
+    align-items: center;
+    gap: 64px;
+}
+
+.homeCopy {
+    position: relative;
+    z-index: 2;
+}
+
+.homeCopy h1 {
+    margin: 0;
+    color: #4d613d;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: clamp(3.4rem, 8vw, 8rem);
+    font-weight: 400;
+    line-height: .78;
+    letter-spacing: -.055em;
+}
+
+.lead {
+    max-width: 450px;
+    margin-top: 32px;
+    color: #5c4a3e;
+    font-size: 15px;
+    line-height: 1.85;
+}
+
+.homeImage {
+    display: none;
+}
+
+.marquee {
+    overflow: hidden;
+    padding: 16px 0;
+    border-top: 1px solid #c7af9c;
+    border-bottom: 1px solid #c7af9c;
+    color: #5c4a3e;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.featureImage {
+    display: none;
+}
+
+.featureImage img {
+    display: none;
+}
+
+.gallerySection {
+    padding: 40px 40px 112px 40px;
+    background: #4d613d;
+    color: #ffffff;
+}
+
+.sectionHeadingGallery > p {
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .24em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.sectionHeadingGallery > h2 {
+    margin: 0;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: .96;
+    letter-spacing: -.03em;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    max-width: 672px;
+}
+
+.gallerySection h2 {
+    color: #ffffff;
+}
+
+.galleryHeading {
+    margin-bottom:30px;
+    align-items: end;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.galleryHeading > p {
+    max-width: 320px;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.galleryGrid {
+    display: grid;
+    grid-template-columns: 1.25fr .75fr .75fr;
+    grid-template-rows: 220px 220px;
+    gap: 12px;
+}
+
+.galleryGrid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: saturate(.75);
+    transition: filter 250ms ease;
+}
+
+.galleryGrid img:hover {
+    filter: saturate(1);
+}
+
+.galleryGrid img:first-child {
+    grid-row: span 2;
+}
+
+.galleryGrid img:last-child {
+    grid-column: span 2;
+}
+
+.sectionHeading philosophy p {
+    color: #5c4a3e;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .24em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.timeline {
+    display: grid;
+    gap: 20px;
+}
+
+.timeline article {
+    display: grid;
+    padding-top: 24px;
+    grid-template-columns: 100px 1fr;
+    gap: 16px;
+    border-top: 1px solid #c7af9c;
+
+}
+
+.timelineDate {
+    color: #a98467;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 24px;
+    font-style: italic;
+}
+
+.timeline h3 {
+    margin-bottom: 12px;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.storyCopy {
+    display: grid;
+    max-width: 620px;
+    gap: 16px;
+    color: #ffffff;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+.storyCopy p {
+    margin-bottom: 0;
+}
+
+.sectionBrown {
+    border-top: 8px solid #b0d399;
+    background: #5c4a3e
+}
+
+.storyLayout {
+    max-width: 1240px;
+    margin: auto;
+    align-items: center;
+    gap: 96px;
+    padding: 40px;
+}
+
+.sectionHeading {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 672px;
+}
+
+
+.sectionHeading p {
+    margin-top: 20px;
+    color: #b0d399;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .24em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.sectionHeading h2 {
+    margin: 0;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: .96;
+    letter-spacing: -.03em;
+}
+
+.sectionBrown .sectionHeading h2 {
+    color: #ffffff;
+}
+
+/*Article Styles - MENU*/
+#menuContent {
+    padding: 0 56px 20px;
+    max-width: 1120px;
+    margin: auto;
+}
+
+#menuCatagories {
+    display: flex;
+    margin-bottom: 64px;
+    padding: 20px 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px 32px;
+    border-top: 1px solid #c7af9c;
+    border-bottom: 1px solid #c7af9c;
+}
+
+#menuCatagories a {
+    color: #4d613d;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#menuCatagories a:hover {
+    color: #a98467;
+}
+
+#menuSections {
+    display: grid;
+    gap: 80px;
+}
+
+.menuSection {
+    scroll-margin-top: 120px;
+}
+
+.sectionTitle h2 {
+    margin: 0;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.sectionItems {
+    border-top: 1px solid #c7af9c;
+}
+
+.sectionItem {
+    display: flex;
+    padding: 22px 0;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 24px;
+    border-bottom: 1px solid #c7af9c;
+}
+
+.sectionItem img {
+    width: 128px;
+    height: 112px;
+    flex: none;
+    object-fit: cover;
+}
+
+.itemCopy {
+    min-width: 0;
+    flex: 1;
+}
+
+.itemCopy h3 {
+    margin: 0;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.itemCopy p {
+    margin: 4px 0 0;
+    color: #5c4a3e;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.price {
+    color: #4d613d;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 20px;
+}
+
+#Seasonal {
+    scroll-margin-top: 76px;
+    background: #5c4a3e;
+    color: #ffffff;
+    display: grid;
+    max-width: 1240px;
+    margin: auto;
+    align-items: start;
+    gap: 80px;
+    padding: 40px;
+}
+
+.seasonalHeading h2 {
+    color: #b0d399;
+    margin: 0;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.seasonalHeading > p {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .24em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+#holidayInfo p {
+    margin-bottom: 20px;
+    color: #5c4a3e;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .24em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+#Seasonal img {
+    display: none;
+}
+
+.seasonalItems {
+    margin-top: 44px;
+    border-top: 1px solid #c7af9c;
+}
+
+.seasonalItems article {
+    display: grid;
+    padding: 24px 0;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+    border-bottom: 1px solid #c7af9c;
+}
+
+.seasonalItems h3,
+.holidayInfo h3 {
+    margin: 0;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.seasonalItems p {
+    margin: 8px 0 0;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+#holidayInfo {
+    display: grid;
+    margin-top: 40px;
+    padding: 32px;
+    align-items: end;
+    gap: 32px;
+    border-top: 8px solid #b0d399;
+    background: #ffffff;
+    color: #231f20;
+}
+
+#holidayInfo h3 {
+    color: #231f20;
+    margin: 0;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+#holidayInfo p:last-child {
+    margin: 8px 0 0;
+    color: #5c4a3e;
+    font-size: 14px;
+    text-transform: initial;
+    font-weight: initial;
+    letter-spacing: initial;
+}
+
+#customDesserts {
+    background: #5c4a3e;
+    scroll-margin-top: 76px;
+    border-top: 10px solid #ffffff;
+    grid-template-columns: 1fr 1fr;
+    padding: 40px;
+}
+
+#customDesserts img {
+    position: relative;
+    width: 100%;
+}
+
+#customHeading h2 {
+    max-width: 672px;
+    color: #b0d399;
+    margin: 0;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+#customHeading p {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .24em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+#customHeading #customIntro {
+    margin: 8px 0 0;
+    font-size: 14px;
+    text-transform: initial;
+    font-weight: initial;
+    letter-spacing: initial;
+}
+
+.optionsLayout {
+    display: grid;
+    margin-top: 36px;
+    border-bottom: 1px solid #c7af9c;
+    column-gap: 32px;
+}
+
+.customOpt {
+    padding: 20px 0;
+    border-top: 1px solid #c7af9c;
+}
+
+.customOpt > h3 {
+    color: #b0d399;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+.customOpt > p {
+    margin: 8px 0 0;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+#orderPhone {
+    border-top: 1px solid #c7af9c;
+    border-bottom: 1px solid #c7af9c;
+    padding-bottom: 20px;
+}
+
+#orderPhone p {
+    margin: 20px 0 0;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.7;
+    border-top: 1px solid #c7af9c;
+}
+
+#orderPhone a {
+    color: #b0d399;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 28px;
+}
+
+#orderPhone a:hover {
+    color: #ffffff;
+}
+
+.orderLayout {
+    display: grid;
+    max-width: 1120px;
+    margin: auto;
+}
+
+.orderHeading p {
+    margin-bottom: 20px;
+    color: #4d613d;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .24em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.orderHeading h2 {
+    color: #231f20;
+    margin: 0;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.orderIntro p {
+    margin: 20px 0 0;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    color: #231f20;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+#orderLeft {
+    padding: 40px;
+}
+
+#orderForm {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 40px 40px 40px;
+}
+
+#orderForm > .field {
+    padding: 10px;
+}
+
+.field {
+    display: grid;
+    gap: 10px;
+}
+
+.field > span,
+#addInfo > span {
+    color: #5c4a3e;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.field i,
+#addInfo i {
+    color: #807e7e;
+}
+
+#addInfo {
+    grid-column: span 2;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.field input,
+.field select,
+#addInfo textarea {
+    width: 100%;
+    border: 1px solid #5c4a3e;
+    border-radius: 0;
+    padding: 10px;
+    color: #231f20;
+    font-size: 1em;
+    resize: vertical;
+    background: transparent;
+    outline: none;
+}
+
+.orderOptions {
+    display: grid;
+    grid-column: span 2;
+    gap: 20px;
+    margin: 0;
+    padding: 20px;
+}
+
+.orderItem {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+
+}
+
+
+/* Image Styles */
+.sectionItem img {
+    width: 128px;
+    height: 112px;
+    flex: none;
+    object-fit: cover;
+}
 
 
 /* Page footer styles */
+footer {
+    background: #231f20;
+    color: white;
+    padding: 80px 6%;
+}
+
+
+#footerLogo {
+    width: 220px;
+    height: 90px;
+    object-fit: cover;
+    object-position: bottom;
+    margin-bottom: 12px;
+
+}
+
+#footerTop {
+    color: #c7af9c;
+    margin-bottom: 24px;
+    font-size: 1em;
+}
+
+#footerBlurb {
+    display: none;
+}
+
+#infoBlurb {
+    display: none;
+}
+
+footer p,
+footer address,
+footer dl {
+    max-width: 100%;
+    color: #c7af9c;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.9;
+}
+
+.footerInfo {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+footer dl {
+    display: grid;
+    max-width: 320px;
+    grid-template-columns: 1fr auto;
+    column-gap: 24px;
+}
+
+footer dd {
+    margin: 0;
+}
+
+footer a:hover {
+    color: white;
+}
+
+/* Article Styles - EVENTS */
+
+.eventsLabel {
+    margin: 0;
+    padding-right: 46px;
+    padding-left: 46px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c7af9c;
+    margin-bottom: 20px;
+    color: #5c4a3e;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .24em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.eventRow {
+    padding: 46px;
+    align-items: center;
+    gap: 32px;
+    border-bottom: 1px solid #c7af9c;
+}
+
+.eventDate {
+    color: #4d613d;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.eventRow h2 {
+    margin: 0;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.eventDeets {
+    color: #5c4a3e;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+#newsletter {
+    padding: 46px;
+    background: #4d613d;
+    color: #ffffff;
+    text-align: center;
+}
+
+#newsletter h2 {
+    margin: 0;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+#newsletter form {
+    display: flex;
+    max-width: 512px;
+    margin: 32px auto 0;
+    border-bottom: 1px solid #ffffff;
+}
+
+#newsletter input {
+    width: 100%;
+    padding: 16px;
+    border: 0;
+    background: transparent;
+    color: #ffffff;
+    outline: 0;
+}
+
+#newsletter input::placeholder {
+    color: #b0d399;
+}
+
+#newsletter button {
+    display: flex;
+    padding: 0;
+    align-items: center;
+    gap: 8px;
+    border: 0;
+    background: transparent;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
 
 
 
@@ -38,7 +1044,38 @@
 */
 @media only screen and (min-width:511px) {
    
-   
+    .galleryHeading {
+        display: flex;
+    }
+    
+    .holidayInfo h3 {
+        font-size: 28px;
+    }
+
+    .seasonalItems h3 {
+        font-size: 28px;
+    }
+
+    .customOpt > h3 {
+        font-size: 28px;
+    }
+
+    .eventRow h2 {
+        font-size: 38px;
+    }
+
+    .eventDate {
+        font-size: 28px;
+    }
+
+    #newsletter h2 {
+        font-size: 60px;
+    }
+    
+     #footerLower {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* =============================================
@@ -46,8 +1083,26 @@
    =============================================
 */
 @media only screen and (min-width:641px) {
-      
-   
+    .homeCopy h1 {
+        font-size: clamp(4.4rem, 8vw, 8rem);
+    }
+
+    
+    #holidayInfo {
+        grid-template-columns: 1fr auto;
+    }
+
+    .optionsLayout {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #newsletter {
+        padding: 80px;
+    }
+
+    
+
+    
 }
 
 /* =============================================
@@ -55,14 +1110,131 @@
    =============================================
 */
 @media only screen and (min-width: 721px) {
-       
+    .headerContent .buttonDark {
+        display: inline-flex;
+    }
+
+    .storyLayout {
+        display: grid;
+        grid-template-columns: .8fr 1.2fr;
+    }
+    
+    .homeBegIn {
+        display: grid;
+    }
+    
+    .homeImage {
+        display: grid;
+        position: relative;
+        min-height: 680px;
+    }
+
+    .homeImage > img {
+        display: grid;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50% 50% 0 0;
+    }
+    
+    .featureImage {
+    display: grid;
+        position: relative;
+    max-width: 512px;
+    margin: auto;
+    padding: 40px 0 40px 32px;
+}
+
+.featureImage img {
+    display: grid;
+        position: sticky;
+        top: 112px;
+        width: 100%;
+        height: 620px;
+        object-fit: cover;
+}
+    
+    .storyTitle {
+    position: sticky;
+    top: 128px;
+    align-self: start;
+}
+
+    .menuSection {
+        display: grid;
+        grid-template-columns: .6fr 1.4fr;
+        gap: 80px;
+    }
+
+    .sectionTitle h2 {
+        font-size: 28px;
+
+    }
+
+    .itemCopy h3 {
+        font-size: 25px;
+    }
+
+    #Seasonal {
+        display: grid;
+        grid-template-columns: .8fr 1.2fr
+    }
+
+    #Seasonal img {
+        display: grid;
+        position: sticky;
+        top: 112px;
+        width: 100%;
+        height: 620px;
+        object-fit: cover;
+    }
+
+    #customDesserts img {
+        display: grid;
+        position: sticky;
+        top: 112px;
+        width: 100%;
+        height: 620px;
+        object-fit: cover;
+    }
+
+    .orderLayout {
+        grid-template-columns: .6fr 1.4fr;
+    }
+
+    #orderForm {
+        padding: 80px 40px 40px 40px;
+    }
+
+    .eventRow {
+        display: grid;
+        grid-template-columns: 90px 1fr 1.1fr auto;
+    }
+    
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 50px;
+        width: 100%;
+
+    }
+    
+    #footerBlurb {
+        display: grid;
+    }
+    
+    #infoBlurb {
+        display: grid;
+    }
+   
 }
 
 /* =============================================
    Tablet and Desktop Styles: greater than 1020px
    =============================================
 */
-@media only screen and (min-width: 1021px) {
 
-    
-}
+
+
+@media only screen and (min-width: 1021px) {}
