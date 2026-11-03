@@ -207,7 +207,7 @@ header {
     align-items: center;
     gap: 11px;
     border-bottom: 1px solid #a98467;
-    color: #a98467;
+    color: #ffffff;
     font-size: 11px;
     font-weight: 600;
     letter-spacing: .12em;
@@ -216,7 +216,7 @@ header {
 }
 
 .textLinkLight:hover {
-    color: #ffffff;
+    color: #b0d399;
 }
 
 /* Article Styles */
@@ -227,7 +227,7 @@ header {
 
 .introLine {
     margin-bottom: 20px;
-    color: #a98467;
+    color: #4d613d;
     font-size: 10px;
     font-weight: 600;
     letter-spacing: .24em;
@@ -248,7 +248,7 @@ header {
     padding-bottom: 20px;
     margin: 32px auto 0;
     max-width: 580px;
-    color: #807e7e;
+    color: #5c4a3e;
     font-size: 15px;
     line-height: 1.85;
 }
@@ -286,7 +286,7 @@ header {
 .lead {
     max-width: 450px;
     margin-top: 32px;
-    color: #807e7e;
+    color: #5c4a3e;
     font-size: 15px;
     line-height: 1.85;
 }
@@ -300,7 +300,7 @@ header {
     padding: 16px 0;
     border-top: 1px solid #c7af9c;
     border-bottom: 1px solid #c7af9c;
-    color: #807e7e;
+    color: #5c4a3e;
     font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
     font-size: 20px;
     font-style: italic;
@@ -387,6 +387,15 @@ header {
     grid-column: span 2;
 }
 
+.sectionHeading philosophy p {
+    color: #5c4a3e;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .24em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
 .timeline {
     display: grid;
     gap: 20px;
@@ -441,12 +450,6 @@ header {
     padding: 40px;
 }
 
-.storyLayout {
-    max-width: 1240px;
-    margin: auto;
-    gap: 96px;
-}
-
 .sectionHeading {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -456,7 +459,7 @@ header {
 
 .sectionHeading p {
     margin-top: 20px;
-    color: #a98467;
+    color: #b0d399;
     font-size: 10px;
     font-weight: 600;
     letter-spacing: .24em;
@@ -558,13 +561,13 @@ header {
 
 .itemCopy p {
     margin: 4px 0 0;
-    color: #807e7e;
+    color: #5c4a3e;
     font-size: 13px;
     line-height: 1.5;
 }
 
 .price {
-    color: #a98467;
+    color: #4d613d;
     font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
     font-size: 20px;
 }
@@ -590,10 +593,19 @@ header {
     line-height: 1;
 }
 
-.seasonalHeading > p,
+.seasonalHeading > p {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: .24em;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
 #holidayInfo p {
     margin-bottom: 20px;
-    color: #c7af9c;
+    color: #5c4a3e;
     font-size: 10px;
     font-weight: 600;
     letter-spacing: .24em;
@@ -628,7 +640,7 @@ header {
 
 .seasonalItems p {
     margin: 8px 0 0;
-    color: #c7af9c;
+    color: #ffffff;
     font-size: 14px;
     line-height: 1.7;
 }
@@ -687,7 +699,7 @@ header {
 
 #customHeading p {
     margin-bottom: 20px;
-    color: #c7af9c;
+    color: #ffffff;
     font-size: 10px;
     font-weight: 600;
     letter-spacing: .24em;
@@ -763,7 +775,7 @@ header {
 
 .orderHeading p {
     margin-bottom: 20px;
-    color: #a98467;
+    color: #4d613d;
     font-size: 10px;
     font-weight: 600;
     letter-spacing: .24em;
@@ -820,7 +832,6 @@ header {
 .field i,
 #addInfo i {
     color: #807e7e;
-
 }
 
 #addInfo {
@@ -939,7 +950,7 @@ footer a:hover {
     padding-bottom: 20px;
     border-bottom: 1px solid #c7af9c;
     margin-bottom: 20px;
-    color: #a98467;
+    color: #5c4a3e;
     font-size: 10px;
     font-weight: 600;
     letter-spacing: .24em;
@@ -955,7 +966,7 @@ footer a:hover {
 }
 
 .eventDate {
-    color: #a98467;
+    color: #4d613d;
     font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
     font-size: 20px;
     font-style: italic;
@@ -969,14 +980,14 @@ footer a:hover {
 }
 
 .eventDeets {
-    color: #807e7e;
+    color: #5c4a3e;
     font-size: 14px;
     line-height: 1.7;
 }
 
 #newsletter {
     padding: 46px;
-    background: #a98467;
+    background: #4d613d;
     color: #ffffff;
     text-align: center;
 }
@@ -1005,7 +1016,7 @@ footer a:hover {
 }
 
 #newsletter input::placeholder {
-    color: #c7af9c;
+    color: #b0d399;
 }
 
 #newsletter button {
