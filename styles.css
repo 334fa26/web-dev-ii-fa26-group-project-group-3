@@ -481,6 +481,26 @@ header {
 }
 
 /*Article Styles - MENU*/
+/* Hide skip link until it receives keyboard focus - Sourced from ChatGPT */
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 10px;
+    z-index: 9999;
+    padding: 12px 20px;
+    background-color: #4d613d;
+    color: #ffffff;
+    font-size: 16px;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+}
+
+/* Display link when user presses Tab */
+.skip-link:focus {
+    top: 10px;
+    left: 10px;
+    outline: 3px solid #b0d399;
+}
+
 #menuContent {
     padding: 0 56px 20px;
     max-width: 1120px;
