@@ -587,7 +587,7 @@ header {
 }
 
 .price {
-    color: #4d613d;
+    color: #231f20;
     font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
     font-size: 20px;
 }
@@ -851,7 +851,7 @@ header {
 
 .field i,
 #addInfo i {
-    color: #807e7e;
+    color: #5c4a3e;
 }
 
 #addInfo {
