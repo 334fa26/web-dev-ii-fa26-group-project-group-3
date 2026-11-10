@@ -787,7 +787,7 @@ header {
     color: #ffffff;
 }
 
-.orderLayout {
+#orderLayout {
     display: grid;
     max-width: 1120px;
     margin: auto;
@@ -1219,7 +1219,7 @@ footer a:hover {
         object-fit: cover;
     }
 
-    .orderLayout {
+    #orderLayout {
         grid-template-columns: .6fr 1.4fr;
     }
 
