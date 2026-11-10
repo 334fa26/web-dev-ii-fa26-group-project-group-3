@@ -225,15 +225,6 @@ header {
     text-align: center;
 }
 
-.introLine {
-    margin-bottom: 20px;
-    color: #4d613d;
-    font-size: 10px;
-    font-weight: 600;
-    letter-spacing: .24em;
-    line-height: 1.5;
-    text-transform: uppercase;
-}
 
 .pageTitle {
     color: #5c4a3e;
