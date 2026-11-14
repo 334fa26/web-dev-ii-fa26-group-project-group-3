@@ -100,10 +100,9 @@ header {
 }
 
 .headerLogo {
-    width: 170px;
-    height: 90px;
+    max-width: 60px;
+    height: auto;
     object-fit: cover;
-    object-position: bottom;
     padding-bottom: 5px;
 }
 
@@ -118,6 +117,11 @@ header {
     align-items: center;
 }
 
+#scLogo {
+    max-height: 60px;
+    width: auto;
+    object-fit: cover;
+}
 
 .navLink {
     position: relative;

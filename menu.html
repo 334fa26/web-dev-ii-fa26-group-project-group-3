@@ -26,7 +26,12 @@
     <header>
         <div class="headerContent">
             <a class="brand" href="index.html">
-                <img class="headerLogo" src="logos/sweetclover.png" alt="Sweet Clover Bakery" />
+                <!-- Code sourced from W3Schools --> 
+                <picture>
+                    <source media="(max-width:509px)" srcset="logos/SCicon.png">
+                    <source media="(min-width:510px)" srcset="logos/sweetclover.png">
+                    <img id=scLogo src="sweetclover.png" alt="Sweet Clover Bakery" style="width:auto;">
+                </picture> 
             </a>
             <nav class="desktopNav" aria-label="Primary navigation">
                 <a class="activeNavLink " href="index.html">Home</a>
