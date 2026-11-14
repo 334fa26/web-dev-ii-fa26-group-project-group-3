@@ -378,7 +378,7 @@ header {
     grid-column: span 2;
 }
 
-.sectionHeading philosophy p {
+#philosophyHead p {
     color: #5c4a3e;
     font-size: 10px;
     font-weight: 600;
@@ -386,6 +386,16 @@ header {
     line-height: 1.5;
     text-transform: uppercase;
 }
+
+#philosophyHead h2 {
+    margin-bottom: 20px;
+    font-family: "Arial Rounded MT Bold", "Arial Rounded MT", Arial, sans-serif;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: .96;
+    letter-spacing: -.03em;
+}
+
 
 .timeline {
     display: grid;
@@ -1164,7 +1174,7 @@ footer a:hover {
         object-fit: cover;
 }
     
-    .storyTitle {
+#philosophyHead {
     position: sticky;
     top: 128px;
     align-self: start;
